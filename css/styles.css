@@ -1,31 +1,52 @@
+/* O * seleciona todos os elementos da página */
 * {
     font-family: Helvetica;
     color: #FFF;
     text-align: center;
 }
 
+/* O body define estilos específicos para o corpo da página */
 body {
+    /* Padding adiciona um preenchimento interno de 15 pixels em todas as direções 
+        Obs.: Mudar os valores para entender como funciona
+    */
     padding: 15px;
     background-color: #3b3f44;
 }
 
-.hide {
-    display: none;
+/* Palavras ou frases com "." antes serve para definir estilos de uma classe */
+.header-content {
+    text-align: center;
 }
 
-a, input[type="submit"]{
-    background-color: #007BFF;
-    color: #FFF;
+.btn {
+    background: transparent;
+    border: none;
+    background-color: rgb(85, 174, 8);
+    color: #fff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
-    opacity: 0.7;
     font-size: 1em;
-    border: none;
     cursor: pointer;
 }
 
-a:hover,
-input[type="submit"]{
-    opacity: 1;
+.cats {
+    padding: 20px;
+    /* Display flex define o tamanho inicial que um item deve ter antes que o espaço ao seu redor seja distribuído */
+    display: flex;
+    /* Alinha os itens horizontalmente ao centro */
+    justify-content: center;
+    /* Alinha os itens verticalmente ao centro */
+    align-items: center;
+    height: 100%;
+}
+
+.random_cats {
+    width: 40%;
+}
+
+img {
+    max-width: 700px;
+    height: 30rem;
 }
